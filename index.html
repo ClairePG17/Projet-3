@@ -31,37 +31,41 @@
         <header>
             <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
             <p class="header-subtitle">En plein centre ville ou en pleine nature</p>
-            <!-- La partie ou faut rajouter des balises ou du code car pas sure de moi-->
+
             <form method="get" action="">
                 <label for="ville">
-                    <img src="images/logo/map.svg" alt="logo_position">
+                    <div class="img-map-border">
+                        <img class="img-map" src="images/logo/map.svg" alt="logo_position">
+                    </div>
                 </label>
-                <input type="checkbox" name="ville" id="ville">
-                <input type="submit" value="Rechercher">
+                <input class="form-bar" type="text" name="ville" id="ville" placeholder="Marseille, France">
+                <input class="form-button" type="submit" value="Rechercher">
             </form>
-            <!--balise filtre-->
+            
             <div class="filtre-section">
                 <p class="filtre-subtitle">Filtres</p>
-                <div class="filtre-button">
+                <a class="filtre-button" href="">
                     <img src="images/logo/Property 1=price.svg" alt="logo_billet">
-                    <p>Economiques</p>
-                </div>
-                <div class="filtre-button">
+                    <p class="filtre-txt">Economiques</p>
+                </a>
+                <a class="filtre-button" href="">
                     <img src="images/logo/Property 1=family.svg" alt="logo_personne">
-                    <p>Familial</p>
-                </div>
-                <div class="filtre-button">
+                    <p class="filtre-txt">Familial</p>
+                </a>
+                <a class="filtre-button" href="">
                     <img src="images/logo/Property 1=romantic.svg" alt="logo_coeur">
-                    <p>Romantiques</p>
-                </div>
-                <div class="filtre-button">
+                    <p class="filtre-txt">Romantiques</p>
+                </a>
+                <a  class="filtre-button" href="">
                     <img src="images/logo/Property 1=fire.svg" alt="logo_flamme">
-                    <p>Nos pépites</p>
-                </div>
+                    <p class="filtre-txt">Nos pépites</p>
+                </a>
             </div>
-            <!--balise info-->
+            
             <div class="info-section">
-                <img src="images/logo/Property 1=info.svg" alt="logo_info">
+                <div class="img-info-border">
+                    <img class="img-info" src="images/logo/Property 1=info.svg" alt="logo_info">
+                </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
