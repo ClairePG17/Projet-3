@@ -433,13 +433,19 @@ footer li {
     }
 
     .activités {
+        flex-direction: row;
         justify-content: space-between;
-        width: 193px;
-        height: 210px;
     }
 
     .activités .card{
-        flex-direction: column;
+        justify-content: space-between;
+        width: 193px;
+        height: 270px;
+    }
+
+    .activités img{
+        width: 193px;
+        height: 200px;
     }
 }
 
