@@ -248,7 +248,7 @@ form {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
 }
 
@@ -349,7 +349,8 @@ form {
 
 .activités{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -429,6 +430,16 @@ footer li {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activités {
+        justify-content: space-between;
+        width: 193px;
+        height: 210px;
+    }
+
+    .activités .card{
+        flex-direction: column;
     }
 }
 
