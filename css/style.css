@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -252,13 +253,23 @@ footer{
     background-color: var(--main-bg-color);
 }
 
-footer div{
-    width:446px;
-    height:163px;
+footer .card-txt {
+    width: 33%;
+}
+
+footer .card-title {
+    padding-left: 20px;
+    margin-top: 20px;
 }
 
 footer ul{
     list-style: none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+footer li {
+    margin-top: 15px;
 }
 
 
