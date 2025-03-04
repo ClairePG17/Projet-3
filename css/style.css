@@ -99,7 +99,7 @@ form {
     gap: 24px;
 }
 
-/****** Hebergements And Populaires ***********/
+/********** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -112,7 +112,7 @@ form {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/* Hebergements */
 .hebergements {
     width: calc(66.66% - 20px);
     margin-right: 40px;
@@ -167,7 +167,7 @@ form {
     font-weight: bold;
 }
 
-/****** Populaires ***********/
+/* Populaires */
 .populaires {
     width: calc(33.33% - 20px);
 }
@@ -211,17 +211,26 @@ form {
     margin-bottom: 5px;
 }
 
-/*Activitées*/
-.Activités-title{
+/********** Activitées **********/
+.activités-section{
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
-.Activités{
+.activités-section .section-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.activités{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-.Activités .card{
+.activités .card{
     display: flex;
     width: 297px;
     height: 439px;
@@ -229,14 +238,14 @@ form {
     justify-content: space-around;
 }
 
-.Activités img{
+.activités img{
     width: 297px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-/*footer*/
+/********** footer **********/
 footer{
     display: flex;
     justify-content: flex-start;
@@ -252,7 +261,8 @@ footer ul{
     list-style: none;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/********** Le code ci-dessous correspond à la version responsive uniquement **********/
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
