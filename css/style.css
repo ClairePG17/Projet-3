@@ -23,9 +23,10 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     min-width: 320px;
     box-sizing: border-box;
+    margin: 0 50px;
+    padding: 0;
 }
 
 a {
@@ -62,7 +63,6 @@ a {
 }
 
 header, main {
-    padding: 0 50px 0 50px;
     gap: 35px;
 }
 
@@ -70,18 +70,18 @@ header, main {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav a:hover {
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
-    padding: 13px;
+    padding: 14px;
 }
 
 nav ul{
     display: flex;
     gap: 68px;
-    padding: 0 50px 0 50px;
     list-style: none;
 }
 
@@ -89,7 +89,6 @@ nav img {
     display: flex;
     width: 61px;
     height: 19px;
-    padding: 30px 50px 30px 50px;
     gap: 10px;
 }
 
@@ -111,6 +110,7 @@ form {
     display: flex;
     justify-content: flex-start;
     margin-top: 35px;
+    margin-bottom: 35px;
     width: 377px;
 }
 
@@ -159,7 +159,6 @@ form {
 /* Filtres */
 .filtre-section {
     display: flex;
-    margin: 35px 0;
     align-items: center;
 }
 
