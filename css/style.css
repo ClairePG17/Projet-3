@@ -23,6 +23,7 @@ body {
 
 .main-container {
     width: 100%;
+    max-width: 1440px;
     min-width: 320px;
     box-sizing: border-box;
     margin: 0 50px;
@@ -114,6 +115,10 @@ form {
     width: 377px;
 }
 
+button {
+    display: none;
+}
+
 .form-bar {
     border: 1px solid var(--main-bg-color);
 }
@@ -137,6 +142,7 @@ form {
     border-bottom-right-radius: 15px;
     padding: 15px 16px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .img-map {
@@ -357,9 +363,13 @@ form {
     flex-wrap: wrap;
 }
 
+.activités a {
+    width: calc(25% - 30px);
+}
+
 .activités .card{
     display: flex;
-    width: 297px;
+    width: 100%;
     height: 439px;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -367,7 +377,7 @@ form {
 }
 
 .activités img{
-    width: 297px;
+    width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -442,12 +452,12 @@ footer li {
 
     .activités .card{
         justify-content: space-between;
-        width: 193px;
+        width: 100%;
         height: 270px;
     }
 
     .activités img{
-        width: 193px;
+        width: 100%;
         height: 200px;
     }
 }
@@ -471,11 +481,34 @@ footer li {
         border-top: none;
     }
 
+    nav ul{
+        width: 100%;
+        padding: 0;
+    }
+
+    nav li{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a{
+        display: block;
+        width: 100%;
+    }
+
     form{
         display: flex;
         margin:auto;
         margin-top: 35px;
         margin-bottom: 35px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    .Rechercher {
+        display: none;
     }
 
     .filtre-section {
@@ -536,5 +569,33 @@ footer li {
     .hebergements-cards .card {
         width: inherit;
         height: 300px;
+    }
+
+    /*activités*/
+
+    .activités {
+        flex-direction: column;
+    }
+
+    .activités a{
+        width: 100%;
+    }
+
+    .activités .card{
+        flex-direction: column;
+    }
+
+    .activités .card-title{
+        padding-left: 20px;
+    }
+
+    /*footer*/
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .card-txt{
+        width: auto;
     }
 }

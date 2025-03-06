@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -32,33 +32,34 @@
             <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
             <p class="header-subtitle">En plein centre ville ou en pleine nature</p>
 
-            <form method="get" action="">
-                <label for="ville">
-                    <div class="img-map-border">
+            <form method="get" action="#">
+                <label class="img-map-border" for="ville">
                         <img class="img-map" src="images/logo/map.svg" alt="logo_position">
-                    </div>
                 </label>
                 <input class="form-bar" type="text" name="ville" id="ville" placeholder="Marseille, France">
-                <input class="form-button" type="submit" value="Rechercher">
+                <input class="form-button Rechercher" type="submit" value="Rechercher">
+                <button class="form-button" type="submit">
+                    <img src="images/logo/loupe.svg" alt="Rechercher">
+                </button>
             </form>
             
             <div class="filtre-section">
                 <p class="filtre-subtitle">Filtres</p>
                 <div class="filtre-button-section">
-                    <a class="filtre-button" href="">
-                        <img src="images/logo/Property 1=price.svg" alt="logo_billet">
+                    <a class="filtre-button" href="#">
+                        <img src="images/logo/Property1=price.svg" alt="logo_billet">
                         <p class="filtre-txt">Economiques</p>
                     </a>
-                    <a class="filtre-button" href="">
-                        <img src="images/logo/Property 1=family.svg" alt="logo_personne">
+                    <a class="filtre-button" href="#">
+                        <img src="images/logo/Property1=family.svg" alt="logo_personne">
                         <p class="filtre-txt">Familial</p>
                     </a>
-                    <a class="filtre-button" href="">
-                        <img src="images/logo/Property 1=romantic.svg" alt="logo_coeur">
+                    <a class="filtre-button" href="#">
+                        <img src="images/logo/Property1=romantic.svg" alt="logo_coeur">
                         <p class="filtre-txt">Romantiques</p>
                     </a>
-                    <a  class="filtre-button" href="">
-                        <img src="images/logo/Property 1=fire.svg" alt="logo_flamme">
+                    <a  class="filtre-button" href="#">
+                        <img src="images/logo/Property1=fire.svg" alt="logo_flamme">
                         <p class="filtre-txt">Nos pépites</p>
                     </a>
                 </div>
@@ -66,7 +67,7 @@
             
             <div class="info-section">
                 <div class="img-info-border">
-                    <img class="img-info" src="images/logo/Property 1=info.svg" alt="logo_info">
+                    <img class="img-info" src="images/logo/Property1=info.svg" alt="logo_info">
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
@@ -196,7 +197,7 @@
                             </article>
                         </a>
                     </div>
-                    <a href="">
+                    <a href="#">
                         <p class="card-button">Afficher plus</p>
                     </a>
                 </section>
